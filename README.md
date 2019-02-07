@@ -5,10 +5,12 @@ Ever thought about running InvoiceNinja on heroku? Well, here you go! By deployi
 
 ## Installation
 **1. Create your heroku app**
+
 Start by creating your new heroku app. The free tier should be good enough. Afterwards, attach a MySQL addon - again, the free version will be fine.
 
 ---
 **2. Configure the required buildpacks**
+
 This application makes use of a custom buildpack, which allows you to deploy generic ZIP archives with PHP application code. For this to work, you need to configure the buildpacks for your application as follows:
 
     https://github.com/janxb/heroku-php-app-buildpack.git
