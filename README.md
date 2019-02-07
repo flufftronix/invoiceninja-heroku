@@ -1,5 +1,6 @@
 
 
+
 # invoiceninja-heroku
 Ever thought about running InvoiceNinja on heroku? Well, here you go! By deploying this repository to your heroku app, you will be able to host your very own instance of InvoiceNinja.
 
@@ -15,7 +16,7 @@ This application makes use of a custom buildpack, which allows you to deploy gen
 
     https://github.com/janxb/heroku-php-app-buildpack.git
     heroku/php
-(Hint: The order is important, place the custom buildpack at the top)
+*(Hint: The order is important, place the custom buildpack at the top)*
 
 ---
 **3. Create the required environment variables**
@@ -31,3 +32,10 @@ This application makes use of a custom buildpack, which allows you to deploy gen
 | `DB_PASSWORD` |  | MySQL database password |
 | `REQUIRE_HTTPS` | `true` | Redirect all requests to HTTPS |
 | `TRUSTED_PROXIES` | `0.0.0.0/0` | Always trust the incoming proxy server on heroku |
+
+---
+**4. Updating your instance**
+
+Because heroku does not offer persistent application storage, your InvoiceNinja application is not able to automatically update itself. Instead, you have to edit the `APP_ARCHIVE` property manually and then trigger a new deployment in the heroku web interface. This should take no longer than a few minutes. 
+
+*(Hint: You will receive a warning message in InvoiceNinja if a new release version is available.)*
