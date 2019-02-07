@@ -21,7 +21,7 @@ This application makes use of a custom buildpack, which allows you to deploy gen
 |Property Name|Example Value|Description|
 |---|---|---|
 | `APP_ARCHIVE` | `https://github.com/invoiceninja/invoiceninja/archive/v4.5.9.zip` | Release ZIP-file URL, manually increment for each update |
-| `APP_KEY` | `SomeRandomStringSomeRandomString` | Random encryption string, needs to be 32 bits long |
+| `APP_KEY` | `SomeRandomStringSomeRandomString` | Random encryption string, needs to be 32 bit long |
 | `APP_URL` | `https://invoices.example.com` | URL of your InvoiceNinja instance |
 | `DB_HOST` | `eu-cdbr-west-02.cleardb.net` | MySQL database host |
 | `DB_DATABASE` |  | MySQL database name |
