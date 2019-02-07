@@ -27,7 +27,7 @@ This application makes use of a custom buildpack, which allows you to deploy gen
 | `APP_URL` | `https://invoices.example.com` | URL of your InvoiceNinja instance |
 | `DB_HOST` | `eu-cdbr-west-02.cleardb.net` | MySQL database host |
 | `DB_DATABASE` |  | MySQL database name |
+| `DB_USERNAME` |  | MySQL database user |
 | `DB_PASSWORD` |  | MySQL database password |
-| `DB_USERNAME` |  | MySQL database password |
 | `REQUIRE_HTTPS` | `true` | Redirect all requests to HTTPS |
 | `TRUSTED_PROXIES` | `0.0.0.0/0` | Always trust the incoming proxy server on heroku |
