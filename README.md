@@ -15,6 +15,7 @@ Start by creating your new heroku app. The free tier should be good enough. Afte
 
 This application makes use of a custom buildpack, which allows you to deploy generic ZIP archives with PHP application code. For this to work, you need to configure the buildpacks for your application as follows:
 
+    https://github.com/weibeld/heroku-buildpack-run.git
     https://github.com/janxb/heroku-zipped-app-buildpack.git
     heroku/php
 *(Hint: The order is important, place the custom buildpack at the top)*
