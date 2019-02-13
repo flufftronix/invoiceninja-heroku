@@ -15,7 +15,6 @@ Start by creating your new heroku app. The free tier should be good enough. Afte
 
 This application makes use of a custom buildpack, which allows you to deploy generic ZIP archives with PHP application code. For this to work, you need to configure the buildpacks for your application as follows:
 
-    https://github.com/weibeld/heroku-buildpack-run.git
     https://github.com/janxb/heroku-zipped-app-buildpack.git
     heroku/php
 *(Hint: The order is important, place the custom buildpack at the top)*
@@ -35,7 +34,8 @@ This application makes use of a custom buildpack, which allows you to deploy gen
 | `DB_PASSWORD` |  | MySQL database password |
 | `REQUIRE_HTTPS` | `true` | Redirect all requests to HTTPS |
 | `TRUSTED_PROXIES` | `0.0.0.0/0` | Always trust the incoming proxy server on heroku |
-| `PHANTOMJS_BIN_PATH` | `~/phantomjs/bin/phantomjs` | Use the local PhantomJS for generating PDFs |
+| `PHANTOMJS_CLOUD_KEY` | `a-demo-key-with-low-quota-per-ip-address` | Use the PhantomJS cloud service for generating PDFs |
+| `LOG` | `errorlog` | Send appliation log messages to heroku log stream |
 
 
 ## Updates
