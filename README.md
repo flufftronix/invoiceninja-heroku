@@ -34,6 +34,8 @@ This application makes use of a custom buildpack, which allows you to deploy gen
 | `DB_PASSWORD` |  | MySQL database password |
 | `REQUIRE_HTTPS` | `true` | Redirect all requests to HTTPS |
 | `TRUSTED_PROXIES` | `0.0.0.0/0` | Always trust the incoming proxy server on heroku |
+| `PHANTOMJS_BIN_PATH` | `~/phantomjs/bin/phantomjs` | Use the local PhantomJS for generating PDFs |
+
 
 ## Updates
 
